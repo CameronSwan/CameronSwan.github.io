@@ -10,14 +10,18 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <>
+    <div className='flex flex-col h-screen justify-between'>
     <Header/>
+    <main  className="mb-auto">
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/portfolio' element={<Portfolio/>}/>
       <Route path='/contact' element={<Contact/>}/>
     </Routes>
+    </main>
     <Footer/>
+    </div>
     </>
   );
 }
