@@ -12,7 +12,7 @@ function App() {
     <>
     <div className='flex flex-col h-screen justify-between'>
     <Header/>
-    <main  className="mb-auto">
+    <main  className="mb-auto h-svh">
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
